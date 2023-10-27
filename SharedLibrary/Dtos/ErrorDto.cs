@@ -8,7 +8,7 @@ namespace SharedLibrary.Dtos
 {
 	public class ErrorDto
 	{
-		public List<string> Errors { get; private set; }
+		public List<string> Errors { get; private set; }= new List<string>();
 		public bool IsShow { get; private set; }
 
 
@@ -28,7 +28,8 @@ namespace SharedLibrary.Dtos
         public ErrorDto(List<string> errors,bool isShow)
         {
             Errors=errors;
-			IsShow = true;
+			IsShow = isShow;
+
         }
     }
 }

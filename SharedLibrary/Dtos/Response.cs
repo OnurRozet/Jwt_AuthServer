@@ -11,7 +11,7 @@ namespace SharedLibrary.Dtos
 	{
         public T Data { get; private set; }
 		public int StatusCode { get;private set; }
-        public ErrorDto? Error { get; set; }
+        public ErrorDto Error { get; set; }
         public bool IsShow { get; set; }
 
 		[JsonIgnore]

@@ -9,6 +9,6 @@ namespace Jwt.Core.Model
 {
 	public class UserApp:IdentityUser
 	{
-        public string City { get; set; }
+        public string? City { get; set; }
     }
 }
